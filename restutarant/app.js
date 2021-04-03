@@ -1,0 +1,23 @@
+$(document).ready(function(){
+   $('.slider1').slick({
+      autoplay:true,
+     slidesToShow:2,
+     slidesToScroll:1,
+     prevArrow:".prev-btn",
+     nextArrow:".next-btn",
+     responsive:[
+        {
+           breakpoint:992,
+           settings:{
+            slidesToShow:2,
+           }
+        },
+        {
+         breakpoint:768,
+         settings:{
+          slidesToShow:1,
+         }
+      }
+     ]
+
+   });
